@@ -11,19 +11,11 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: softwareag
 services:
-- serviceName: project.git02092024.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
+- serviceName: project.git02092024.integrations:flow
   packages:
   - name: Git02092024Project
     version: "1.0"
-- serviceName: project.git02092024.integrations:Copy_flow1
-  packages:
-  - name: Git02092024Project
-    version: "1.0"
-- serviceName: pub.date:getCurrentDate
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.1969
-- serviceName: project.git02092024.integrations:flow1
+- serviceName: project.git02092024.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:test
   packages:
   - name: Git02092024Project
     version: "1.0"
@@ -53,7 +45,7 @@ configurationVariables:
   ? artConnection.Git02092024Project.project.git02092024.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
   : tcp
   ? artConnection.Git02092024Project.project.git02092024.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
-  : "false"
+  : "true"
   ? artConnection.Git02092024Project.project.git02092024.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
   : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
   ? artConnection.Git02092024Project.project.git02092024.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
